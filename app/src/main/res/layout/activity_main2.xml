@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity2">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="What is answer of 17+9=?"
+        android:textSize="38sp" />
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/q2RadiogroupID">
+
+        <RadioButton
+            android:id="@+id/q2RadioBtn1ID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="23"
+            android:textSize="38sp" />
+
+        <RadioButton
+            android:id="@+id/q2RadioBtn2ID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="28"
+            android:textSize="38sp" />
+
+        <RadioButton
+            android:id="@+id/q2RadioBtn3ID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="26"
+            android:textSize="38sp" />
+
+        <RadioButton
+            android:id="@+id/q2RadioBtn4ID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="27"
+            android:textSize="38sp" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:onClick="Q2Function"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/q2preBtnID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30sp"
+            android:text="pre"
+            android:textSize="38sp" />
+
+        <Button
+            android:id="@+id/q2submitBtnID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30sp"
+            android:text="submit"
+            android:onClick="Q2Function"
+            android:textSize="38sp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

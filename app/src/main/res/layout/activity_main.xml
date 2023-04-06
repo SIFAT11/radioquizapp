@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="What is answer of 44+9=?"
+        android:textSize="38sp" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/q1RadiogroupID">
+
+        <RadioButton
+            android:id="@+id/q1RadioBtn1ID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="52"
+            android:textSize="38sp" />
+
+        <RadioButton
+            android:id="@+id/q1RadioBtn2ID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="53"
+            android:textSize="38sp" />
+
+        <RadioButton
+            android:id="@+id/q1RadioBtn3ID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="54"
+            android:textSize="38sp" />
+
+        <RadioButton
+            android:id="@+id/q1RadioBtn4ID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="55"
+            android:textSize="38sp" />
+    </RadioGroup>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:onClick="Q1Function"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/q1nextBtnID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30sp"
+            android:text="next"
+            android:onClick="Q1Function"
+            android:textSize="38sp" />
+
+        <Button
+            android:id="@+id/q1submitBtnID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30sp"
+            android:text="submit"
+            android:textSize="38sp" />
+
+    </LinearLayout>
+</LinearLayout>
